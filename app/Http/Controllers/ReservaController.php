@@ -4,22 +4,23 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
-use App\Models\Funcionario;
+use App\Models\Reserva;
 
-class FuncionarioController extends Controller
+class ReservaController extends Controller
 {
     public function showFormularioCadastro(Request $request){
 
-        return view("formularioCadastroFuncionario");
+        return view("formularioCadastroReserva");
     }
 
-    public function cadFuncionario(Request $request){
+    public function cadReserva(Request $request){
         $dadosValidos = $request->validate([
             'nome' => 'string|required',
-            'funcao' => 'string|required'
+            'email' => 'string|required',
+            'fone' => 'string|required'
         ]);
 
-        Funcionario::create($dadosValidos);
+        Cliente::create($dadosValidos);
         return Redirect::route('home');
     }
 }
