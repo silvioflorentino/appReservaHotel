@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('quartos', function (Blueprint $table) {
             $table->id();
-            $table->integer('numero');
-            $table->string('tipo');
-            $table->double('valor', 8, 2); 
+            $table->integer('numeroquarto');
+            $table->string('tipoquarto');
+            $table->decimal('valordiaria', 8,2); 
             $table->timestamps();
         });
     }

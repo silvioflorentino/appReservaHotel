@@ -14,13 +14,19 @@ class ReservaController extends Controller
     }
 
     public function cadReserva(Request $request){
+        
         $dadosValidos = $request->validate([
-            'nome' => 'string|required',
-            'email' => 'string|required',
-            'fone' => 'string|required'
+            'idcliente' => 'integer|required',
+            'idfuncionario' => 'integer|required',
+            'numeroquarto' => 'integer|required',
+            'situacao' => 'string|required',
+            'valortotal' => 'numeric|required',
+            'dataentrada' => 'date|required',
+            'datasaida' => 'date|required'
         ]);
 
-        Cliente::create($dadosValidos);
+    
+        Reserva::create($dadosValidos);
         return Redirect::route('home');
     }
 }

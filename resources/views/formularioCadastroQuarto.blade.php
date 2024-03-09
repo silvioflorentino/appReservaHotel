@@ -11,17 +11,17 @@
 
   <div class="col-md-12">
 
-  <select class="form-select" name="tipo" aria-label="Default select example">
-  <option selected>Tipo:</option>
-  <option value="Classe A+">Classe A+</option>
-  <option value="Comercial">Comercial</option>
-  <option value="Suite">Suite</option>
-</select>
-    </div>
+    <select class="form-select" name="tipo" aria-label="Default select example">
+      <option selected>Tipo:</option>
+      <option value="Classe A+">Classe A+</option>
+      <option value="Comercial">Comercial</option>
+      <option value="Suite">Suite</option>
+    </select>
+  </div>
 
   <div class="col-3">
     <label for="inputValorQuarto" class="form-label">Valor:</label>
-    <input type="text" class="form-control" id="inputValorQuarto" name="valor">
+    <input type="number" Step=".02" class="form-control" id="inputValorQuarto" name="valor">
   </div>
   <div class="col-12">
     <button type="submit" class="btn btn-primary">Cadastrar</button>
