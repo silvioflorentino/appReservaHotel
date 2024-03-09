@@ -27,4 +27,7 @@ class ClienteController extends Controller
         return Redirect::route('home');
     }
 
+    public function gerenciarCliente(){
+        return view('gerenciarCliente');
+    }
 }

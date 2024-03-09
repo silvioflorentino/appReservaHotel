@@ -32,12 +32,9 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="{{route('show-formulario-cadastro-cliente')}}">Cadastrar</a></li>
-                                <li><a class="dropdown-item" href="#">Pesquisar</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Deletar</a></li>
-                                <li><a class="dropdown-item" href="#">Alterar</a></li>
+                                <li><a class="dropdown-item" href="{{route('gerenciar-cliente')}}">Gerenciar</a></li>
+                             
+                                
                             </ul>
                         </li>
 
@@ -48,12 +45,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="{{route('show-formulario-cadastro-funcionario')}}">Cadastrar</a></li>
-                                <li><a class="dropdown-item" href="#">Pesquisar</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Deletar</a></li>
-                                <li><a class="dropdown-item" href="#">Alterar</a></li>
+                                <li><a class="dropdown-item" href="{{route('gerenciar-funcionario')}}">Gerenciar</a></li>
                             </ul>
                         </li>
 
@@ -64,12 +56,8 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="{{route('show-formulario-cadastro-quarto')}}">Cadastrar</a></li>
-                                <li><a class="dropdown-item" href="#">Pesquisar</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Deletar</a></li>
-                                <li><a class="dropdown-item" href="#">Alterar</a></li>
+                                <li><a class="dropdown-item" href="{{route('gerenciar-quarto')}}">Gerenciar</a></li>
+                                
                             </ul>
                         </li>
 
@@ -80,12 +68,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="{{route('show-formulario-cadastro-reserva')}}">Cadastrar</a></li>
-                                <li><a class="dropdown-item" href="#">Pesquisar</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Deletar</a></li>
-                                <li><a class="dropdown-item" href="#">Alterar</a></li>
+                                <li><a class="dropdown-item" href="{{route('gerenciar-reserva')}}">Gerenciar</a></li>
                             </ul>
                         </li>
                         
