@@ -6,12 +6,12 @@
 @csrf
   <div class="col-md-12">
     <label for="inputNumeroQuarto" class="form-label">Número:</label>
-    <input type="text" class="form-control" id="inputNumeroQuarto" name="numero">
+    <input type="text" class="form-control" id="inputNumeroQuarto" name="numeroquarto">
   </div>
 
   <div class="col-md-12">
 
-    <select class="form-select" name="tipo" aria-label="Default select example">
+    <select class="form-select" name="tipoquarto" aria-label="Default select example">
       <option selected>Tipo:</option>
       <option value="Classe A+">Classe A+</option>
       <option value="Comercial">Comercial</option>
@@ -21,7 +21,7 @@
 
   <div class="col-3">
     <label for="inputValorQuarto" class="form-label">Valor:</label>
-    <input type="number" Step=".02" class="form-control" id="inputValorQuarto" name="valor">
+    <input type="number" Step=".02" class="form-control" id="inputValorQuarto" name="valordiaria">
   </div>
   <div class="col-12">
     <button type="submit" class="btn btn-primary">Cadastrar</button>
