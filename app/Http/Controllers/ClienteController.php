@@ -29,7 +29,7 @@ class ClienteController extends Controller
 
     public function mostrarGerenciarClienteId(Cliente $id){
 
-        return view('xxxxxx',['registrosClientes' => $id]);
+        return view('formularioAlterarCliente',['registrosClientes' => $id]);
     }
 
     public function  gerenciarCliente(Request $request){
